@@ -36,8 +36,7 @@ We design, harden, and deploy modular autonomy stacks that pair ruggedized compu
 
 ## Get Involved
 1. Start in [`echelon/docs/integration/full-stack.md`](https://github.com/Thyraen-Robotics/echelon/tree/main/docs/integration/full-stack.md) for local-to-field workflows.
-2. Use [`AGENTS.md`](https://github.com/Thyraen-Robotics/echelon-mission-system/blob/main/AGENTS.md) to align on coding conventions and review expectations.
-3. Open an issue in the [`echelon`](https://github.com/Thyraen-Robotics/echelon/issues) hub with proposals, integration feedback, or pilot requests.
+2. Open an issue in the [`echelon`](https://github.com/Thyraen-Robotics/echelon/issues) hub with proposals, integration feedback, or pilot requests.
 
 ## Staying In Touch
 - Follow release manifests in `Echelon/manifests/` for subsystem compatibility maps.
