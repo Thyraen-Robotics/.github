@@ -17,8 +17,8 @@ We design, harden, and deploy modular autonomy stacks that pair ruggedized compu
 | --- | --- | --- | --- |
 | Mission hub | [`Thyraen-Robotics/echelon`](https://github.com/Thyraen-Robotics/echelon) | Coordinates subsystem releases, integration docs, and fleet build orchestration. | Active |
 | Mission system | [`Thyraen-Robotics/echelon-mission-system`](https://github.com/Thyraen-Robotics/echelon-mission-system) | Nix flake that emits mission-ready images for Raspberry Pi 5 (Navio2 today, Jetson next). | Active development |
-| Mesh radio firmware | [`Thyraen-Robotics/echelon-radio-firmware`](https://github.com/Thyraen-Robotics/echelon-radio-firmware) | Tooling + build pipeline for long-range mesh stacks feeding the mission bus. | Migration in progress |
-| HSI (operator UX) | [`Thyraen-Robotics/echelon-hsi`](https://github.com/Thyraen-Robotics/echelon-hsi) | Backend services and operator UI for situational awareness and command. | Scaffolding |
+| Mesh radio firmware | [`Thyraen-Robotics/echelon-radio-firmware`](https://github.com/Thyraen-Robotics/echelon-radio-firmware) | Tooling + build pipeline for long-range mesh stacks feeding the mission bus. | Active |
+| HSI (operator UX) | [`Thyraen-Robotics/echelon-hsi`](https://github.com/Thyraen-Robotics/echelon-hsi) | Backend services and operator UI for situational awareness and command. | Active |
 
 ### R&D Tracks
 - Navio2 Pi5 bring-up sandbox exploring PREEMPT_RT kernels and pi-gen stages for modern autopilots.
@@ -40,8 +40,8 @@ We design, harden, and deploy modular autonomy stacks that pair ruggedized compu
 3. Open an issue in the [`echelon`](https://github.com/Thyraen-Robotics/echelon/issues) hub with proposals, integration feedback, or pilot requests.
 
 ## Staying In Touch
-- 📦 Follow release manifests in `Echelon/manifests/` for subsystem compatibility maps.
-- 🛠️ Watch `make` + `nix` targets in each repo for day-one build parity.
-- 🤝 Need a private conversation? Open a draft issue in the `Echelon` hub and flag it for the core team so we can coordinate an offline briefing.
+- Follow release manifests in `Echelon/manifests/` for subsystem compatibility maps.
+- Watch `make` + `nix` targets in each repo for day-one build parity.
+- Need a private conversation? Open a draft issue in the `Echelon` hub and flag it for the core team so we can coordinate an offline briefing.
 
 <p align="center"><sub>Thyraen Robotics · Autonomy that respects the mission.</sub></p>
