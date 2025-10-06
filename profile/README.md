@@ -1,6 +1,6 @@
 # Thyraen Robotics
 
-> Mission-ready autonomy systems that stay reliable when the field gets noisy.
+> Mission-ready autonomy systems that stay reliable in contested and degraded environments.
 
 We design, harden, and deploy modular autonomy stacks that pair ruggedized compute with resilient networking. Our teams blend embedded Linux, mesh communications, and operator tooling so mission crews can trust their robots in denied or high-tempo environments.
 
