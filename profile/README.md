@@ -22,7 +22,7 @@ We design, harden, and deploy modular autonomy stacks that pair ruggedized compu
 
 ### R&D Tracks
 - Navio2 Pi5 bring-up sandbox exploring PREEMPT_RT kernels and pi-gen stages for modern autopilots.
-- Legacy Echelon mission-system experiments retained for regression analysis and migration notes.
+- Migrating Echelon Mission System images to the Jetson Orin family with tuned flash and deployment flows.
 
 ## Current Focus
 - Ship **Echelon Mission System v0.1.0** with Raspberry Pi 5 + Navio2 images and automated flashing flows.
