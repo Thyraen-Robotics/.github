@@ -10,7 +10,7 @@ We focus on autonomy as a *capability*, not a single vehicle or algorithm — sp
 
 ## What We Build
 
-Thyraen Robotics develops a tightly coupled ecosystem of **mission autonomy software and autonomous systems**, designed to scale from single platforms to coordinated teams operating under human intent.
+Thyraen Robotics develops a tightly coupled ecosystem of **mission autonomy software and autonomous systems**, operating across single platforms and coordinated teams under human intent.
 
 Our work centers on two flagship products:
 
@@ -67,10 +67,7 @@ Thyraen Robotics is intentionally architected as an ecosystem, not a monolith.
 - Shared **contracts, autonomy primitives, and capability taxonomies** bind the system together
 - Platform‑specific details remain isolated from mission‑level autonomy
 
-This separation allows us to:
-- Scale autonomy across new platforms without rewriting mission logic
-- Introduce new autonomous capabilities without restructuring the ecosystem
-- Preserve operator trust through transparency and control boundaries
+This separation keeps mission logic decoupled from platform specifics, reduces integration friction, and preserves operator trust through transparency and control boundaries.
 
 ---
 
@@ -105,11 +102,8 @@ Thyraen Robotics is under active development.
 Current emphasis includes:
 - Hardening Echelon as a mission autonomy and collaborative C2 platform
 - Expanding Breacher’s autonomous effects and execution pathways
-- Maturing simulation‑to‑field workflows for rapid capability validation
-
-Our long‑term vision is an autonomy ecosystem where missions are expressed as intent, agents coordinate dynamically, and the battlespace itself becomes malleable.
+- Improving simulation‑to‑field workflows for rapid capability validation
 
 ---
 
 <p align="center"><sub>Thyraen Robotics · Autonomy that adapts to the mission.</sub></p>
-
