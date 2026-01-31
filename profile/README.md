@@ -1,46 +1,115 @@
 # Thyraen Robotics
 
-> Mission-ready autonomy platform that stays reliable in contested and degraded environments.
+**Mission‑centric autonomy for contested and degraded environments.**
 
-We design, harden, and deploy modular autonomy stacks that pair ruggedized compute with resilient networking. Our teams blend embedded Linux, mesh communications, and operator tooling so mission crews can trust their robots in denied or high-tempo environments.
+Thyraen Robotics builds **mission autonomy systems** that allow autonomous agents to operate, collaborate, and adapt in environments where communications are unreliable, sensing is contested, and conditions change faster than pre‑planned workflows can keep up.
+
+We focus on autonomy as a *capability*, not a single vehicle or algorithm — spanning mission command and control, collaborative behaviors, and resilient execution on real platforms.
 
 ---
 
-## Platform Pillars
-- **Reproducible base images** powered by NixOS for deterministic upgrades across fleets.
-- **Long-range mesh communications** tuned for low bandwidth and dynamic teams.
-- **Operator-first interfaces** that surface telemetry, mission plans, and failsafes in one view.
-- **Hardware pragmatism** spanning Raspberry Pi 5 + Navio2 through Jetson-class edge compute.
+## What We Build
 
-## Echelon Platform
-| Layer | Repository | Focus | Status |
-| --- | --- | --- | --- |
-| Mission hub | [`Thyraen-Robotics/echelon`](https://github.com/Thyraen-Robotics/echelon) | Coordinates subsystem releases, integration docs, and fleet build orchestration. | Active |
-| Mission system | [`Thyraen-Robotics/echelon-mission-system`](https://github.com/Thyraen-Robotics/echelon-mission-system) | Nix flake that emits mission-ready images for Raspberry Pi 5 (Navio2 today, Jetson next). | Active development |
-| Mesh radio firmware | [`Thyraen-Robotics/echelon-radio-firmware`](https://github.com/Thyraen-Robotics/echelon-radio-firmware) | Tooling + build pipeline for long-range mesh stacks feeding the mission bus. | Active |
-| HSI (operator UX) | [`Thyraen-Robotics/echelon-hsi`](https://github.com/Thyraen-Robotics/echelon-hsi) | Backend services and operator UI for situational awareness and command. | Active |
+Thyraen Robotics develops a tightly coupled ecosystem of **mission autonomy software and autonomous systems**, designed to scale from single platforms to coordinated teams operating under human intent.
 
-### R&D Tracks
-- Navio2 Pi5 bring-up sandbox exploring PREEMPT_RT kernels and pi-gen stages for modern autopilots.
-- Migrating Echelon Mission System images to the Jetson Orin family with tuned flash and deployment flows.
+Our work centers on two flagship products:
 
-## Current Focus
-- Ship **Echelon Mission System v0.1.0** with Raspberry Pi 5 + Navio2 images and automated flashing flows.
-- Finalise **mesh radio firmware migration** into the unified build + release tooling.
-- Stand up **operator dashboards** that bridge ROS 2 telemetry into mission-ready UX.
+---
 
-## How We Work
-- Version every subsystem through the `echelon` hub and pin releases with reproducible manifests.
-- Treat build and flash tooling as first-class code; every repo ships scripts + docs for the full loop.
-- Ground innovations in field feedback by pairing lab validation with multi-node range exercises.
+## Echelon — Mission Autonomy & Collaborative C2
 
-## Get Involved
-1. Start in [`echelon/docs/integration/full-stack.md`](https://github.com/Thyraen-Robotics/echelon/tree/main/docs/integration/full-stack.md) for local-to-field workflows.
-2. Open an issue in the [`echelon`](https://github.com/Thyraen-Robotics/echelon/issues) hub with proposals, integration feedback, or pilot requests.
+**Echelon** is our mission autonomy platform.
 
-## Staying In Touch
-- Follow release manifests in `Echelon/manifests/` for subsystem compatibility maps.
-- Watch `make` + `nix` targets in each repo for day-one build parity.
-- Need a private conversation? Open a draft issue in the `Echelon` hub and flag it for the core team so we can coordinate an offline briefing.
+It provides the reasoning, coordination, and human‑machine interface required to command autonomous agents operating independently or in teams.
 
-<p align="center"><sub>Thyraen Robotics · Autonomy that respects the mission.</sub></p>
+Echelon:
+- Maintains a **canonical operational picture** built from heterogeneous data sources
+- Represents entities, tasks, capabilities, and effects as first‑class objects
+- Enables **dynamic tasking, re‑tasking, and collaboration** between autonomous agents
+- Serves as the primary **Mission C2 and collaborative autonomy UI** for operators
+- Integrates humans as intent‑setters and supervisors, not micromanagers
+
+Echelon is platform‑agnostic by design. Vehicles, sensors, simulators, and external systems integrate through strict contracts and adapters rather than bespoke coupling.
+
+> **Echelon answers the question:**
+> *How do autonomous systems coordinate, adapt, and execute missions together — with or without continuous human control?*
+
+---
+
+## Breacher — Autonomous Battlespace Shaping
+
+**Breacher** is the first autonomous system built within the Thyraen ecosystem.
+
+Breacher is an **Operational Preparation of the Environment (OPE)** capability focused on enabling freedom of maneuver in denied or contested environments.
+
+Rather than treating denial as a hard stop, Breacher treats it as a **solvable task**.
+
+Breacher:
+- Detects, characterizes, and localizes threat emitters
+- Degrades or neutralizes adversary sensing, communications, or control
+- Establishes **temporary or persistent corridors** of reduced risk
+- Executes kinetically, electronically, cyber‑electromagnetically, or through deception
+- Operates autonomously under policy bounds, with optional human supervision
+
+Breacher is **not a single vehicle**. It is a capability package instantiated across heterogeneous agents — air, ground, maritime, or otherwise — and orchestrated through Echelon.
+
+> **Breacher answers the question:**
+> *How do autonomous forces shape the battlespace so that follow‑on missions can succeed?*
+
+---
+
+## How It Fits Together
+
+Thyraen Robotics is intentionally architected as an ecosystem, not a monolith.
+
+- **Echelon** provides mission reasoning, tasking, collaboration, and operator interaction
+- **Breacher** provides concrete autonomous effects executed by real platforms
+- Shared **contracts, autonomy primitives, and capability taxonomies** bind the system together
+- Platform‑specific details remain isolated from mission‑level autonomy
+
+This separation allows us to:
+- Scale autonomy across new platforms without rewriting mission logic
+- Introduce new autonomous capabilities without restructuring the ecosystem
+- Preserve operator trust through transparency and control boundaries
+
+---
+
+## Design Philosophy
+
+Our systems are guided by a few non‑negotiable principles:
+
+- **Mission over platform** — autonomy exists to serve operational outcomes
+- **Capabilities over scripts** — systems adapt instead of replaying plans
+- **Contracts over coupling** — integration without fragility
+- **Human intent first** — autonomy optimizes execution, humans define goals and limits
+- **Resilience by default** — degraded modes are expected, not exceptional
+
+---
+
+## Who This Is For
+
+Thyraen Robotics works with stakeholders who care about:
+- Operating autonomous systems in **denied, contested, or low‑trust environments**
+- Coordinating **multiple autonomous agents** without centralized micromanagement
+- Transitioning autonomy from experimentation to **operational reality**
+- Maintaining human authority while increasing tempo and scale
+
+This includes defense, security, and advanced robotics organizations seeking **mission‑ready autonomy**, not demos.
+
+---
+
+## Status & Direction
+
+Thyraen Robotics is under active development.
+
+Current emphasis includes:
+- Hardening Echelon as a mission autonomy and collaborative C2 platform
+- Expanding Breacher’s autonomous effects and execution pathways
+- Maturing simulation‑to‑field workflows for rapid capability validation
+
+Our long‑term vision is an autonomy ecosystem where missions are expressed as intent, agents coordinate dynamically, and the battlespace itself becomes malleable.
+
+---
+
+<p align="center"><sub>Thyraen Robotics · Autonomy that adapts to the mission.</sub></p>
+
