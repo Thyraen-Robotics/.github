@@ -1,15 +1,4 @@
-<p align="center">
-  <a href="https://thyraen-robotics.github.io/">
-    <img src="https://raw.githubusercontent.com/Thyraen-Robotics/.github/master/profile/assets/banner.png" alt="Thyraen Robotics — From Objectives to Effects" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://thyraen-robotics.github.io/"><img src="https://img.shields.io/badge/Website-thyraen--robotics.github.io-8ab4d8?style=flat-square&labelColor=0a0d11" alt="Website" /></a>
-  <a href="mailto:contact@thyraen.ai"><img src="https://img.shields.io/badge/Contact-contact%40thyraen.ai-8ab4d8?style=flat-square&labelColor=0a0d11" alt="Contact" /></a>
-  <img src="https://img.shields.io/badge/HQ-Sierra%20Vista%2C%20Arizona-8ab4d8?style=flat-square&labelColor=0a0d11" alt="HQ: Sierra Vista, Arizona" />
-  <img src="https://img.shields.io/badge/Built%20with-Rust-8ab4d8?style=flat-square&labelColor=0a0d11&logo=rust&logoColor=dde4eb" alt="Built with Rust" />
-</p>
+# Thyraen Robotics
 
 **Mission-centric autonomy for contested and degraded environments.**
 
@@ -19,9 +8,11 @@ communications are unreliable, spectrum is contested, and conditions change fast
 pre-planned workflows can keep up. Our systems keep the warfighter heads-up and in the
 fight, compressing decision-to-effect timelines without adding cognitive burden.
 
----
+[thyraen-robotics.github.io](https://thyraen-robotics.github.io/) ·
+[contact@thyraen.ai](mailto:contact@thyraen.ai) ·
+Sierra Vista, Arizona
 
-## The Product Ecosystem
+## The product ecosystem
 
 | Product | What it is |
 |---|---|
@@ -34,23 +25,38 @@ fight, compressing decision-to-effect timelines without adding cognitive burden.
 | **[Augur](https://thyraen-robotics.github.io/products/augur/)** | Doctrine knowledge graph and cited analysis thought-partner |
 | **[Devstack](https://thyraen-robotics.github.io/products/devstack/)** | Shared engineering platform powering every Thyraen repository |
 
----
-
-## How It Fits Together
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Thyraen-Robotics/.github/master/profile/assets/ecosystem.png" alt="Ecosystem diagram: operators command through Echelon (Mission C2 and Common Operating Picture); Tacit (Resilient Datalink) carries tasking and state across contested spectrum to Vanguard (Onboard Platform and Mission Autonomy); Simulator, Crucible, Augur, and Devstack form the foundation." width="830" />
-</p>
+## How it fits together
 
 One integrated capability stack, built on modular open-systems principles: each product
 integrates through defined, versioned interfaces, platform specifics stay isolated from
 mission-level autonomy, and every capability is proven in simulation before it reaches
-hardware. Dissident complements the stack by bringing COTS video feeds into the common
-operating picture.
+hardware.
 
----
+```mermaid
+flowchart TD
+    OPS["operators &amp; external mission systems"]
+    ECH["<b>Echelon</b><br/>Mission C2 &amp; Common Operating Picture"]
+    TAC["<b>Tacit</b><br/>Resilient Datalink"]
+    VAN["<b>Vanguard</b><br/>Onboard Platform and Mission Autonomy"]
 
-## Design Philosophy
+    OPS <-->|"intent ↓ · awareness ↑"| ECH
+    ECH <-->|"tasking ↓ · state ↑"| TAC
+    TAC <-->|"contested spectrum"| VAN
+
+    subgraph FND["foundation"]
+        SIM["<b>Simulator</b><br/>proves behavior"]
+        CRU["<b>Crucible</b><br/>refines data"]
+        AUG["<b>Augur</b><br/>grounds doctrine"]
+        DEV["<b>Devstack</b><br/>unifies engineering"]
+    end
+
+    FND -.->|"proven · fed · grounded · built"| VAN
+```
+
+Dissident complements the stack from the side: it brings COTS video feeds into the
+common operating picture without any vendor software in the loop.
+
+## Design philosophy
 
 - **Mission over platform** — autonomy exists to serve operational outcomes
 - **Contracts over coupling** — typed, versioned boundaries; reject-only validation;
@@ -61,9 +67,7 @@ operating picture.
 - **Honest capability claims** — implemented substrate is kept explicitly distinct from
   ratified targets, in code and in documentation
 
----
-
-## Working With Thyraen
+## Working with Thyraen
 
 Built for the Department of War and allied defense organizations that need autonomy
 transitioned from experimentation to operational reality:
@@ -78,9 +82,5 @@ transitioned from experimentation to operational reality:
 - **Simulation-validated** — thousands of repeatable flights with gated validation
   evidence before hardware
 
-**Contact:** [contact@thyraen.ai](mailto:contact@thyraen.ai) ·
-**Website:** [thyraen-robotics.github.io](https://thyraen-robotics.github.io/)
-
----
-
-<p align="center"><sub>Thyraen Robotics · From Objectives to Effects</sub></p>
+Reach us at [contact@thyraen.ai](mailto:contact@thyraen.ai), or start with the
+[website](https://thyraen-robotics.github.io/).
