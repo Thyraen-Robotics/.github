@@ -43,16 +43,17 @@ flowchart TD
     ECH <-->|"tasking ↓ · state ↑"| TAC
     TAC <-->|"contested spectrum"| VAN
 
-    subgraph FND["foundation"]
-        direction LR
+    subgraph FND["foundation — proven · fed · grounded · built"]
         SIM["<b>Simulator</b><br/>proves behavior"]
         CRU["<b>Crucible</b><br/>refines data"]
         AUG["<b>Augur</b><br/>grounds doctrine"]
         DEV["<b>Devstack</b><br/>unifies engineering"]
     end
 
-    VAN ~~~ FND
-    FND -.->|"proven · fed · grounded · built"| VAN
+    VAN -.- SIM
+    VAN -.- CRU
+    VAN -.- AUG
+    VAN -.- DEV
 ```
 
 Dissident complements the stack from the side: it brings COTS video feeds into the
