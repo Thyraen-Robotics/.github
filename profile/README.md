@@ -1,5 +1,10 @@
 # Thyraen Robotics
 
+[![Website](https://img.shields.io/badge/website-thyraen--robotics.github.io-blue)](https://thyraen-robotics.github.io/)
+[![Contact](https://img.shields.io/badge/contact-contact%40thyraen.ai-blue)](mailto:contact@thyraen.ai)
+![HQ](https://img.shields.io/badge/HQ-Sierra%20Vista%2C%20Arizona-lightgrey)
+![Rust](https://img.shields.io/badge/Rust-1.97.1-orange?logo=rust)
+
 **Mission-centric autonomy for contested and degraded environments.**
 
 Thyraen Robotics builds autonomous systems that turn commander's intent into coordinated
@@ -7,10 +12,6 @@ operational effects — across heterogeneous platforms and sensors, in environme
 communications are unreliable, spectrum is contested, and conditions change faster than
 pre-planned workflows can keep up. Our systems keep the warfighter heads-up and in the
 fight, compressing decision-to-effect timelines without adding cognitive burden.
-
-[thyraen-robotics.github.io](https://thyraen-robotics.github.io/) ·
-[contact@thyraen.ai](mailto:contact@thyraen.ai) ·
-Sierra Vista, Arizona
 
 ## The product ecosystem
 
