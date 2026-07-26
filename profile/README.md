@@ -1,6 +1,5 @@
 # Thyraen Robotics
 
-![HQ](https://img.shields.io/badge/HQ-Sierra%20Vista%2C%20Arizona-lightgrey)
 ![Rust](https://img.shields.io/badge/Rust-1.97.1-orange?logo=rust)
 
 **Mission-centric autonomy for contested and degraded environments.**
