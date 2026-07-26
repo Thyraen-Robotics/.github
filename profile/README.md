@@ -44,12 +44,14 @@ flowchart TD
     TAC <-->|"contested spectrum"| VAN
 
     subgraph FND["foundation"]
+        direction LR
         SIM["<b>Simulator</b><br/>proves behavior"]
         CRU["<b>Crucible</b><br/>refines data"]
         AUG["<b>Augur</b><br/>grounds doctrine"]
         DEV["<b>Devstack</b><br/>unifies engineering"]
     end
 
+    VAN ~~~ FND
     FND -.->|"proven · fed · grounded · built"| VAN
 ```
 
