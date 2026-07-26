@@ -1,7 +1,5 @@
 # Thyraen Robotics
 
-[![Website](https://img.shields.io/badge/website-thyraen--robotics.github.io-blue)](https://thyraen-robotics.github.io/)
-[![Contact](https://img.shields.io/badge/contact-contact%40thyraen.ai-blue)](mailto:contact@thyraen.ai)
 ![HQ](https://img.shields.io/badge/HQ-Sierra%20Vista%2C%20Arizona-lightgrey)
 ![Rust](https://img.shields.io/badge/Rust-1.97.1-orange?logo=rust)
 
